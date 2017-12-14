@@ -2,6 +2,8 @@
 
 This project demonstrates that pureconfig can be used to load configuration for a Spark 2.1 application submitted in either `--deploy-mode client` or `--deploy-mode cluster`
 
+**Note:** For Spark 2.2 support, please see [pure-spark-2.2](https://github.com/leifwickland/pure-spark-2.2).
+
 ## Motivation
 
 Running in `--deploy-mode client` allow more flexibility in how to load the config files because you know which local file system your driver will see. However, `--deploy-mode cluster` has the huge benefit of not making the box from which jobs are submitted the bottlenecks.
